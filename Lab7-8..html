@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7-8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Тортики <span style="font-family: 'Times New Roman', 'Palatino Linotype', serif; color: red;" >&</span> Тістечка</div>
+    </header>
+    <main>
+        <input type="radio" name="filter" id="Pie">
+        <input type="radio" name="filter" id="Pastry">
+        <input type="radio" name="filter" id="Roll">
+        <input type="radio" name="filter" id="Cake">
+        <input type="radio" name="filter" id="Cheesecake">
+        <input type="radio" name="filter" id="noFilter" checked>
+        
+        <div class="selectors">
+
+            <div class="slider">
+            Калорії у порції
+            <br>
+            <input type="range" min="0" max="100" value="30" step="1">
+            <br>
+            Від * до *
+            </div>
+
+            <label for="Pie" class="itemSelector">Пиріг</label>
+            <label for="Pastry" class="itemSelector">Тістечко</label>
+            <label for="Roll" class="itemSelector">Рулет</label>
+            <label for="Cake" class="itemSelector">Торт</label>
+            <label for="Cheesecake" class="itemSelector">Сирник</label>
+            <label for="noFilter" class="itemSelector">Скинути фільтр</label>
+        </div>
+
+        <div class="catalogue">
+            <div class="item cheesecake">
+                <img src="https://www.inspiredtaste.net/wp-content/uploads/2024/04/New-York-Cheesecake-Recipe-Video.jpg" alt="cheesecake New York">
+                <span class="category">Чізкейк</span>
+                <hr class="splitter">
+                <div class="name">Чізкейк Нью-Йорк</div>
+                <div class="ccal">403</div>
+            </div>
+            <div class="item cake">
+                <img src="https://i.ytimg.com/vi/Q78skleBhp4/maxresdefault.jpg" alt="Napoleon">
+                <span class="category">Торт</span>
+                <hr class="splitter">
+                <div class="name">Наполеон</div>
+                <div class="ccal">487</div>
+            </div>
+            <div class="item pastry">
+                <img src="https://www.awesomecuisine.com/wp-content/uploads/2014/07/Walnut-Brownies.jpg" alt="Brownie with nuts">
+                <span class="category">Тістечко</span>
+                <hr class="splitter">
+                <div class="name">Брауні з горіхами</div>
+                <div class="ccal">468</div>
+            </div>
+            <div class="item roll">
+                <img src="https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2019/12/BIB_Apple_Strudel_1125.png" alt="Apple strudel">
+                <span class="category">Рулет</span>
+                <hr class="splitter">
+                <div class="name">Яблучний штрудель</div>
+                <div class="ccal"> 312</div>
+            </div>
+            <div class="item pastry">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/fondant-6afb94b.jpg?quality=90&resize=440,400" alt="Chocolate fondant">
+                <span class="category">Тістечко</span>
+                <hr class="splitter">
+                <div class="name">Шоколадний фондан</div>
+                <div class="ccal">374</div>
+            </div>
+            <div class="item cheesecake">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvQajB0gynmqqIAFIggN3omKwwb-3mJeXIQ&s" alt="Cheery cheesecake">
+                <span class="category">Чізкейк</span>
+                <hr class="splitter">
+                <div class="name">Сирний пиріг з вишнею</div>
+                <div class="ccal">421</div>
+            </div>
+            <div class="item cake">
+                <img src="https://www.allrecipes.com/thmb/gDJ1S6ETLfWGyyWw_4A_IGhvDYE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9295_red-velvet-cake_ddmfs_4x3_1129-a8ab17b825e3464a9a53ceeda54ff461.jpg" alt="Red Verlvet">
+                <span class="category">Торт</span>
+                <hr class="splitter">
+                <div class="name">Торт "Червоний оксамит"</div>
+                <div class="ccal">495</div>
+            </div>
+            <div class="item roll">
+                <img src="https://realfood.tesco.com/media/images/1400x919-Chocolate--caramel-swss-roll-7f47ecfe-16cc-4f44-a0cb-6cf33fa35021-0-1400x919.jpg" alt="Caramel roll">
+                <span class="category">Рулет</span>
+                <hr class="splitter">
+                <div class="name">Карамельний рулет</div>
+                <div class="ccal">356</div>
+            </div>
+            <div class="item cheesecake">
+                <img src="https://www.giallozafferano.com/images/237-23777/Lemon-cheesecake_1200x800.jpg" alt="Lemon cheesecake">
+                <span class="category">Чізкейк</span>
+                <hr class="splitter">
+                <div class="name">Лимонний чізкейк</div>
+                <div class="ccal">389</div>
+            </div>
+            <div class="item pie">
+                <img src="https://www.bettycrocker.com/-/media/GMI/Core-Sites/BC/Images/BC/recipe-heros/desserts/classic-blueberry-pie_hero.jpg" alt="Blueberry pie">
+                <span class="category">Пиріг</span>
+                <hr class="splitter">
+                <div class="name">Пиріг з чорницею</div>
+                <div class="ccal">437</div>
+            </div>
+            <div class="item cake">
+                <img src="https://static01.nyt.com/images/2017/12/17/magazine/17mag-eat1/17mag-17eat-t_CA0-superJumbo.jpg" alt="Honey cake">
+                <span class="category">Торт</span>
+                <hr class="splitter">
+                <div class="name">Медовик</div>
+                <div class="ccal">452</div>
+            </div>
+            <div class="item pastry">
+                <img src="https://www.lilcookie.com/wp-content/uploads/2012/04/eclair-Large.jpg" alt="Vanila cream eclair">
+                <span class="category">Тістечко</span>
+                <hr class="splitter">
+                <div class="name">Еклер з ванільним кремом</div>
+                <div class="ccal">328</div>
+            </div>
+            <div class="item roll">
+                <img src="https://www.allrecipes.com/thmb/5u8cod0sRlkg3Cu5R4qVWY4UoJE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5930435-3143b95e1ae648448cf0f29e24b95754.jpg" alt="Poppy roll">
+                <span class="category">Рулет</span>
+                <hr class="splitter">
+                <div class="name">Маковий рулет</div>
+                <div class="ccal">371</div>
+            </div>
+            <div class="item cheesecake">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMNEHvXHpF9YmyY6ahWD9yDS-l7VRjgkRLWQ&s" alt="Chocolate cheesecake">
+                <span class="category">Чізкейк</span>
+                <hr class="splitter">
+                <div class="name">Шоколадний чізкейк</div>
+                <div class="ccal">409</div>
+            </div>
+            <div class="item pie">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/10/11/0/FNK_Honey-Salted-Mixed-Nut-Tart_H_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1633967314655.webp" alt="Honey and wallnut pie">
+                <span class="category">Пиріг</span>
+                <hr class="splitter">
+                <div class="name">Пиріг з горіхами та медом</div>
+                <div class="ccal">446</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
